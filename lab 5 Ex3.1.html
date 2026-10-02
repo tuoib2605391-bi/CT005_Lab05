@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tìm hiểu lợi ích của công nghệ số trong học tập qua infographic và video giới thiệu.">
+  <title>Lợi ích của công nghệ số trong học tập</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --blue: #1769aa;
+      --blue-dark: #124a78;
+      --blue-light: #eaf5ff;
+      --ink: #203247;
+      --muted: #5d7185;
+      --line: #d9e6f1;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f8fc;
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    .page-header {
+      padding: 48px 24px 42px;
+      background: linear-gradient(135deg, #1769aa, #2588c7);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .header-content,
+    main,
+    .page-footer {
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #d6efff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+    }
+
+    .intro {
+      max-width: 680px;
+      margin: 18px auto 0;
+      color: #edf8ff;
+      font-size: 1.05rem;
+    }
+
+    main {
+      padding: 32px 0 44px;
+    }
+
+    section {
+      margin-bottom: 30px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      box-shadow: 0 8px 24px rgba(27, 75, 115, 0.06);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--blue-dark);
+      font-size: 1.5rem;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    .infographic {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      border-radius: 6px;
+      background: #eaf0f5;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-link {
+      display: inline-block;
+      margin-top: 14px;
+      color: var(--blue);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .video-link:hover {
+      color: var(--blue-dark);
+      text-decoration: underline;
+    }
+
+    .page-footer {
+      padding: 20px 0 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .page-header {
+        padding: 36px 20px;
+      }
+
+      main {
+        padding-top: 22px;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <div class="header-content">
+      <p class="eyebrow">Báo cáo học tập</p>
+      <h1>Lợi ích của công nghệ số trong học tập</h1>
+      <p class="intro">
+        Công nghệ số giúp người học tiếp cận tri thức thuận tiện hơn,
+        chủ động trao đổi và học tập linh hoạt ở mọi lúc, mọi nơi.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="infographic-title">
+      <h2 id="infographic-title">Infographic</h2>
+      <figure>
+        <img
+          class="infographic"
+          src="Lab05_Ex2.1.png"
+          alt="Infographic minh họa lợi ích của công nghệ số trong học tập"
+        >
+        <figcaption>
+          Các lợi ích nổi bật của công nghệ số đối với việc học tập.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="video-title">
+      <h2 id="video-title">Video giới thiệu</h2>
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/7wkxx9XJkXc"
+          title="Video giới thiệu về công nghệ số trong học tập"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <a
+        class="video-link"
+        href="https://youtu.be/7wkxx9XJkXc"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Mở video trên YouTube
+      </a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    Nội dung văn bản tham khảo từ Google Gemini, hình ảnh từ Unsplash (Unsplash license).
+    Video tạo bởi CapCut, tài liệu từ Pexels/FreeSound (CC0).
+  </footer>
+</body>
+</html>
